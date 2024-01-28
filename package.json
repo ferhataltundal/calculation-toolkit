@@ -1,0 +1,40 @@
+{
+  "name": "calculation-toolkit",
+  "version": "1.0.0",
+  "description": "Calculation & Simple Statistic & Math Toolkit",
+  "main": "./dist/index.js",
+  "private": false,
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "lite-server start"
+  },
+  "keywords": [
+    "descriptive",
+    "linear",
+    "math",
+    "math-func",
+    "probability",
+    "regression",
+    "statistics",
+    "advanced-process",
+    "calculation-toolkit",
+    "calc-toolkit",
+    "math-toolkit",
+    "converters"
+  ],
+  "author": "Ferhat ALTUNDAL <ferolinka1850@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ferhataltundal/calculation-toolkit.git"
+  },
+  "files": [
+    "dist /**/*"
+  ]
+}
