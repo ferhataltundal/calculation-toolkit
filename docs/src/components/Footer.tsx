@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className="w-full p-5 flex flex-col justify-start border text-gray-500 border-gray-200">
       <span className="text-sm">
-        Built by <span className="font-medium">Ferhat ALTUNDAL</span>. The
+        It was made by <span className="font-medium">Ferhat ALTUNDAL</span>. The
         source code is available on{" "}
         <Link
           className="font-medium underline"
