@@ -1,4 +1,4 @@
-import { nanometerRates } from "../../constants/length-rates.js";
+import { nanometerRates } from "../../constants/length-rates";
 
 export function nm(value: number, to: string) {
   const key = `nm_to_${to}`;

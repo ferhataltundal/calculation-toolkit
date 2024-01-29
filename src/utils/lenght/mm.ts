@@ -1,4 +1,4 @@
-import { milimeterRates } from "../../constants/length-rates.js";
+import { milimeterRates } from "../../constants/length-rates";
 
 export function mm(value: number, to: string) {
   const key = `mm_to_${to}`;

@@ -1,4 +1,4 @@
-import { RateType } from "../types/type.js";
+import { RateType } from "../types/type";
 export const micrometerRates: RateType = {
   µm_to_µm: 1,
   µm_to_nm: 1000,
