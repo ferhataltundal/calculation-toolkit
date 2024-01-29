@@ -1,20 +1,20 @@
-import { m } from "../utils/lenght/m.js";
-import { cm } from "../utils/lenght/cm.js";
-import { mm } from "../utils/lenght/mm.js";
-import { nm } from "../utils/lenght/nm.js";
-import { µm } from "../utils/lenght/µm.js";
-import { dm } from "../utils/lenght/dm.js";
-import { dam } from "../utils/lenght/dam.js";
-import { hm } from "../utils/lenght/hm.js";
-import { inch } from "../utils/lenght/in.js";
-import { km } from "../utils/lenght/km.js";
-import { mile } from "../utils/lenght/mile.js";
-import { mil } from "../utils/lenght/mil.js";
-import { yard } from "../utils/lenght/yard.js";
-import { feet } from "../utils/lenght/feet.js";
-import { fm } from "../utils/lenght/fm.js";
-import { am } from "../utils/lenght/am.js";
-import { ly } from "../utils/lenght/ly.js";
+import { m } from "../utils/lenght/m";
+import { cm } from "../utils/lenght/cm";
+import { mm } from "../utils/lenght/mm";
+import { nm } from "../utils/lenght/nm";
+import { µm } from "../utils/lenght/µm";
+import { dm } from "../utils/lenght/dm";
+import { dam } from "../utils/lenght/dam";
+import { hm } from "../utils/lenght/hm";
+import { inch } from "../utils/lenght/in";
+import { km } from "../utils/lenght/km";
+import { mile } from "../utils/lenght/mile";
+import { mil } from "../utils/lenght/mil";
+import { yard } from "../utils/lenght/yard";
+import { feet } from "../utils/lenght/feet";
+import { fm } from "../utils/lenght/fm";
+import { am } from "../utils/lenght/am";
+import { ly } from "../utils/lenght/ly";
 
 export default function lengthCalc(
   input: string,
