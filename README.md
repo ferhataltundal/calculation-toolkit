@@ -4,7 +4,7 @@
 
 For detailed documentation on all available functions and their usage, please refer to the documentation
 
-- :green_book: [API Documentation](http://alculation-toolkit.org/docs/)
+- 📗 [API Documentation](http://alculation-toolkit.org/docs/)
 
 [![coverage](https://coveralls.io/repos/github/ferhataltundal/calculation-toolkit/badge.svg)](https://calculation-toolkit.org/docs)
 [![npm](https://badge.fury.io/js/calculation-toolkit.svg)](http://badge.fury.io/js/calculation-toolkit)
@@ -20,7 +20,7 @@ For detailed documentation on all available functions and their usage, please re
 
 If you are using a browser, you can download [calculation-toolkit from GitHub](https://calculation-toolkit.org/calculation-toolkit.js/calculation-toolkit.min.js) or just hotlink to it:
 
-    <script src="https://calculation-toolkit.org/calculation-toolkit.js/calculation-toolkit.min.js"></script>
+    `<script src="https://calculation-toolkit.org/calculation-toolkit.js/calculation-toolkit.min.js"></script>`
 
 If you are using node, you can install calculation-toolkit with [npm](https://npmjs.org/).
 
@@ -34,3 +34,4 @@ or
 
     import calc from "calculation-toolkit"
 
+## Usage
