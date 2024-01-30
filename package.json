@@ -47,7 +47,12 @@
     "url": "https://github.com/ferhataltundal/calculation-toolkit.git"
   },
   "files": [
-    "dist /**/*"
+    "build/",
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md"
   ],
   "dependencies": {
     "tslib": "^2.6.2"

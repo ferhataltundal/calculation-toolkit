@@ -1,0 +1,14 @@
+node_modules
+tests
+docs
+example
+src
+release
+website
+.gitignore
+jest.config.cjs
+package.lock.json
+rollup.config.js
+tsconfig.build.json
+tsconfig.json
+yarn.lock
