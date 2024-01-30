@@ -6,7 +6,7 @@ import MobileSidebar from "./MobileSidebar";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-center flex-row w-full h-[50px] p-5 sticky top-0 left-0 z-[10] border border-gray-200">
+    <header className="flex items-center justify-center flex-row w-full h-[50px] p-5 sticky top-0 left-0 z-[10] border border-gray-200 bg-white">
       <div className="flex flex-row items-center justify-between w-full max-w-[1400px] gap-10">
         <Link to="/">
           <div className="max-w-[60px] max-md:max-w-[35px]">
@@ -25,30 +25,6 @@ const Header = () => {
             }
           >
             Docs
-          </NavLink>
-          <NavLink
-            to="/examples"
-            className={({ isActive, isPending }) =>
-              isPending
-                ? "text-muted-foreground hover:text-gray-600"
-                : isActive
-                ? "text-gray-800"
-                : "text-muted-foreground hover:text-gray-600"
-            }
-          >
-            Examples
-          </NavLink>
-          <NavLink
-            to="/developers"
-            className={({ isActive, isPending }) =>
-              isPending
-                ? "text-muted-foreground hover:text-gray-600"
-                : isActive
-                ? "text-gray-800"
-                : "text-muted-foreground hover:text-gray-600"
-            }
-          >
-            Developers
           </NavLink>
           <Link
             to="https://github.com/ferhataltundal/calculation-toolkit.git"

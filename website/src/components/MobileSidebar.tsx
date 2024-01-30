@@ -30,30 +30,6 @@ const MobileSidebar = () => {
             >
               Docs
             </NavLink>
-            <NavLink
-              to="/examples"
-              className={({ isActive, isPending }) =>
-                isPending
-                  ? "text-muted-foreground hover:text-gray-600"
-                  : isActive
-                  ? "text-gray-800"
-                  : "text-muted-foreground hover:text-gray-600"
-              }
-            >
-              Examples
-            </NavLink>
-            <NavLink
-              to="/developers"
-              className={({ isActive, isPending }) =>
-                isPending
-                  ? "text-muted-foreground hover:text-gray-600"
-                  : isActive
-                  ? "text-gray-800"
-                  : "text-muted-foreground hover:text-gray-600"
-              }
-            >
-              Developers
-            </NavLink>
             <Link
               to="https://github.com/ferhataltundal/calculation-toolkit.git"
               target="_blank"

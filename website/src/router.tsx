@@ -3,8 +3,8 @@ import Navbar from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Docs from "./pages/Docs";
-import Examples from "./pages/Examples";
-import Developer from "./pages/Developer";
+import NotFound from "./pages/NotFound";
+import HarmonicMean from "./pages/ingredients/HarmonicMean";
 const Layout = () => {
   return (
     <div className="relative flex flex-col min-h-screen">
@@ -30,18 +30,16 @@ export const Paths = () => {
         {
           path: "/docs",
           element: <Docs />,
+          children: [
+            {
+              path: "harmonic-mean",
+              element: <HarmonicMean />,
+            },
+          ],
         },
         {
-          path: "/docs/:url",
-          element: <Docs />,
-        },
-        {
-          path: "/examples",
-          element: <Examples />,
-        },
-        {
-          path: "/developers",
-          element: <Developer />,
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },

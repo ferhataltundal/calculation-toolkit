@@ -91,6 +91,22 @@
     }
   }
 }
+.use-custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #c2c2c2;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #6b6b6b;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c;
+  }
+}
 
 @layer base {
   * {
