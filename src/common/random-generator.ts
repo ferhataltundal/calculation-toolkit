@@ -19,7 +19,7 @@
  */
 function randomGenerator(
   length: number,
-  type: "number" | "string" | "both",
+  type: "number" | "string" | "both" = 'both',
   options?: {
     specialCharacter?: boolean;
     customCharacter?: string;

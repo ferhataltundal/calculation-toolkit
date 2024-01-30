@@ -1,83 +1,61 @@
-import { Laptop2, Moon, SunMedium, File } from "lucide-react";
+import { File } from "lucide-react";
 
 export const Terms = [
   {
-    categoryName: "Theme",
+    categoryName: "Commons",
     items: [
       {
-        name: "Light",
-        icon: SunMedium,
-        path: "/",
+        name: "Arithmetic Mean",
+        icon: File,
+        path: "/docs/arithmetic-mean",
       },
       {
-        name: "Dark",
-        icon: Moon,
-        path: "/",
+        name: "Harmonic Mean",
+        icon: File,
+        path: "/docs/harmonic-mean",
       },
-
       {
-        name: "System",
-        icon: Laptop2,
-        path: "/",
+        name: "Geometric Mean",
+        icon: File,
+        path: "/docs/geometric-mean",
+      },
+      {
+        name: "Combine Mean",
+        icon: File,
+        path: "/docs/combine-mean",
       },
     ],
-    keywords: ["theme", "dark", "system", "light", "color"],
+    keywords: ["geometric", "harmonic", "arithmetic", "means", "combine"],
   },
   {
-    categoryName: "Documents",
+    categoryName: "Converters",
     items: [
       {
-        name: "Document-1",
+        name: "Temperature Converter",
         icon: File,
-        path: "/",
+        path: "/docs/temperature-converter",
       },
       {
-        name: "Document-2",
+        name: "Length Converter",
         icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-3",
-        icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-4",
-        icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-5",
-        icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-6",
-        icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-7",
-        icon: File,
-        path: "/",
-      },
-      {
-        name: "Document-8",
-        icon: File,
-        path: "/",
+        path: "/docs/length-converter",
       },
     ],
-    keywords: ["document", "file", "ferobaba"],
-  },
-  {
-    categoryName: "Documents",
-    items: [
-      {
-        name: "Kukuleta",
-        icon: File,
-        path: "/",
-      },
+    keywords: [
+      "temperature",
+      "kelvin",
+      "celsius",
+      "converter",
+      "length",
+      "inch",
+      "yard",
+      "mile",
+      "mil",
+      "micrometer",
+      "nanometer",
+      "meter",
+      "m",
+      "cm",
     ],
-    keywords: ["anan"],
   },
 ];

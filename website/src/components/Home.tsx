@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useCallback } from "react";
 
-const Home = () => {
-  const handleCopyClick = useCallback((text: string) => {
-    navigator.clipboard.writeText(text);
-  }, []);
+export const handleCopyClick = (text: string) => navigator.clipboard.writeText(text);
 
+
+const Home = () => {
   const downloadFile = useCallback((path: string) => {
     const filePath = path;
     const link = document.createElement("a");

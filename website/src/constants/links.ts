@@ -1,12 +1,12 @@
 export const docLinks = {
   gettingStarted: [
     {
-      name: "Installation",
-      path: "/docs/installation",
+      name: "Introduction",
+      path: "/docs",
     },
     {
-      name: "Introduction",
-      path: "/docs/introduction",
+      name: "Installation",
+      path: "/docs/installation",
     },
   ],
   converters: [
