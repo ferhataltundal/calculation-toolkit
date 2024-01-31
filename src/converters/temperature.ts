@@ -2,7 +2,7 @@ import { triplePointOfWater } from "../utils/temperature/tpw";
 import { celsius } from "../utils/temperature/celsius";
 import { kelvin } from "../utils/temperature/kelvin";
 import { fahrenheit } from "../utils/temperature/fahrenheit";
-import { rankine } from "../utils/temperature/rankie";
+import { rankine } from "../utils/temperature/rankine";
 import { reaumur } from "../utils/temperature/reaumur";
 
 export default function tempCalc(

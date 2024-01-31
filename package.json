@@ -49,10 +49,10 @@
   "files": [
     "build/",
     "dist/",
-    "src/",
     "LICENSE",
     "README.md",
-    "SECURITY.md"
+    "SECURITY.md",
+    "package.json"
   ],
   "dependencies": {
     "tslib": "^2.6.2"

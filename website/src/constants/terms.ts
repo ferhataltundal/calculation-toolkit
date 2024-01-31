@@ -44,6 +44,12 @@ export const Terms = [
     keywords: [
       "temperature",
       "kelvin",
+      "centimeter",
+      "nm",
+      "fahrenheit",
+      "rankine",
+      "reaumur",
+      "triple point of water",
       "celsius",
       "converter",
       "length",
@@ -56,6 +62,9 @@ export const Terms = [
       "meter",
       "m",
       "cm",
+      "am",
+      "dam",
+      "dm","feet","fm","hm","in","km","ly","light year","kilometer"
     ],
   },
 ];
