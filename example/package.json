@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
+    "start": "lite-server start",
     "example": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "calculation-toolkit": "^1.0.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
