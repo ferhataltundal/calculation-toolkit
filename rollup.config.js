@@ -6,13 +6,13 @@ export default {
   input: "src/index.ts",
   output: [
     {
-      file: "build/bundle.js",
+      file: "build/calculation-toolkit.js",
       format: "umd",
       name: "calc",
       sourcemap: true,
     },
     {
-      file: "build/bundle.min.js",
+      file: "build/calculation-toolkit.min.js",
       format: "umd",
       name: "calc",
       sourcemap: true,

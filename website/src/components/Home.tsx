@@ -9,11 +9,11 @@ export const handleCopyClick = (text: string) =>
   navigator.clipboard.writeText(text);
 
 const Home = () => {
-  const downloadFile = useCallback((path: string) => {
+  const downloadFile = useCallback((path: string, name: string) => {
     const filePath = path;
     const link = document.createElement("a");
     link.href = filePath;
-    link.setAttribute("download", "bundle.js");
+    link.setAttribute("download", name);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -154,7 +154,8 @@ const Home = () => {
                 <Button
                   onClick={() =>
                     downloadFile(
-                      "https://calculation-toolkit.org/package/bundle.js"
+                      "https://calculation-toolkit.org/package/calculation-toolkit.js",
+                      "calculation-toolkit.js"
                     )
                   }
                   className={cn(
@@ -162,13 +163,14 @@ const Home = () => {
                     "flex gap-2 max-w-[300px]"
                   )}
                 >
-                  Download &nbsp; bundle.js
+                  Download &nbsp; calculation-toolkit.js
                 </Button>
                 or
                 <Button
                   onClick={() =>
                     downloadFile(
-                      "https://calculation-toolkit.org/package/bundle.min.js"
+                      "https://calculation-toolkit.org/package/calculation-toolkit.min.js",
+                      "calculation-toolkit.min.js"
                     )
                   }
                   className={cn(
@@ -176,7 +178,7 @@ const Home = () => {
                     "flex gap-2 max-w-[300px]"
                   )}
                 >
-                  Download &nbsp; bundle.min.js
+                  Download &nbsp; calculation-toolkit.min.js
                 </Button>
               </div>
             </div>
