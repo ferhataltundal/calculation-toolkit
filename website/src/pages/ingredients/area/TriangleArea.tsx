@@ -1,6 +1,12 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function TriangleArea() {
   return (
-    <div>TriangleArea</div>
-  )
+    <HelmetWrapper
+      title="Triangle Area"
+      description="triangle area calculation"
+    >
+      <div></div>
+    </HelmetWrapper>
+  );
 }

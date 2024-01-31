@@ -1,3 +1,9 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
+
 export default function Shuffle() {
-  return <div>Shuffle</div>;
+  return (
+    <HelmetWrapper title="Shuffle" description="shuffle calculation">
+      <div>Shuffle</div>
+    </HelmetWrapper>
+  );
 }

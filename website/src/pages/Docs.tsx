@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export const ActionSingleButton = ({
   name,
@@ -101,15 +102,20 @@ const Docs = () => {
   }, [pathname]);
 
   return (
-    <div className="relative w-full flex justify-center flex-row gap-10">
-      <Sidebar />
-      <div className="w-full flex flex-col p-2 mt-10">
-        <div className="max-w-[800px] w-full">
-          {findMenu}
-          <Outlet />
+    <HelmetWrapper
+      title="Documentation"
+      description="Docs to calculation-toolkit"
+    >
+      <div className="relative w-full flex justify-center flex-row gap-10">
+        <Sidebar />
+        <div className="w-full flex flex-col p-2 mt-10">
+          <div className="max-w-[800px] w-full">
+            {findMenu}
+            <Outlet />
+          </div>
         </div>
       </div>
-    </div>
+    </HelmetWrapper>
   );
 };
 

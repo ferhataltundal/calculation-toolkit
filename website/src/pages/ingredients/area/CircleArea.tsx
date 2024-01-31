@@ -1,3 +1,9 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
+
 export default function CircleArea() {
-  return <div>CircleArea</div>;
+  return (
+    <HelmetWrapper title="Circle Area" description="circle area calculation">
+      <div></div>
+    </HelmetWrapper>
+  );
 }

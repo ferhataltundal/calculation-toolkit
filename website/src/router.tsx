@@ -8,7 +8,7 @@ import Installation from "./pages/ingredients/getting-started/Installation";
 import Introduction from "./pages/ingredients/getting-started/Introduction";
 import Temperature from "./pages/ingredients/converter/Temperature";
 import Length from "./pages/ingredients/converter/Length";
-import AritmeticMean from "./pages/ingredients/common/AritmeticMean";
+import ArithmeticMean from "./pages/ingredients/common/AritmeticMean";
 import HarmonicMean from "./pages/ingredients/common/HarmonicMean";
 import GeometricMean from "./pages/ingredients/common/GeometricMean";
 import CombineMean from "./pages/ingredients/common/CombineMean";
@@ -111,7 +111,7 @@ export const Paths = () => {
             },
             {
               path: "arithmetic-mean",
-              element: <AritmeticMean />,
+              element: <ArithmeticMean />,
             },
             {
               path: "harmonic-mean",

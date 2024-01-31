@@ -1,6 +1,12 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function SquarePerimeter() {
   return (
-    <div>SquarePerimeter</div>
-  )
+    <HelmetWrapper
+      title="Square Perimeter"
+      description="square perimeter calculation"
+    >
+      <div>SquarePerimeter</div>
+    </HelmetWrapper>
+  );
 }

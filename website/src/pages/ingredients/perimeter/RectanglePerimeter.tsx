@@ -1,6 +1,12 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function RectanglePerimeter() {
   return (
-    <div>RectanglePerimeter</div>
-  )
+    <HelmetWrapper
+      title="Rectangle Perimeter"
+      description="rectangle perimeter calculation"
+    >
+      <div>RectanglePerimeter</div>
+    </HelmetWrapper>
+  );
 }

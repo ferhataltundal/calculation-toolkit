@@ -1,3 +1,12 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
+
 export default function SquarePrismVolume() {
-  return <div>SquarePrismVolume</div>;
+  return (
+    <HelmetWrapper
+      title="Square Prism Volume"
+      description="square prism volume calculation"
+    >
+      <div>SquarePrismVolume</div>
+    </HelmetWrapper>
+  );
 }

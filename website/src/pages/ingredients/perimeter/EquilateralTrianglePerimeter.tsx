@@ -1,6 +1,12 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function EquilateralTrianglePerimeter() {
   return (
-    <div>EquilateralTrianglePerimeter</div>
-  )
+    <HelmetWrapper
+      title="Equilateral Triangle Perimeter"
+      description="equilateral triangle perimeter calculation"
+    >
+      <div>EquilateralTrianglePerimeter</div>
+    </HelmetWrapper>
+  );
 }

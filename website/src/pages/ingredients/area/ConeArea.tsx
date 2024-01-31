@@ -1,6 +1,9 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function ConeArea() {
   return (
-    <div>ConeArea</div>
-  )
+    <HelmetWrapper title="Cone Area" description="cone area calculation">
+      <div></div>
+    </HelmetWrapper>
+  );
 }

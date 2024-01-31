@@ -1,6 +1,9 @@
+import HelmetWrapper from "@/components/HelmetWrapper";
 
 export default function CubeArea() {
   return (
-    <div>CubeArea</div>
-  )
+    <HelmetWrapper title="Cube Area" description="cube area calculation">
+      <div></div>
+    </HelmetWrapper>
+  );
 }
