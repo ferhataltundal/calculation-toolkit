@@ -20,9 +20,9 @@ For detailed documentation on all available functions and their usage, please re
 
 ## Installation
 
-If you are using a browser, you can download [calculation-toolkit from GitHub](https://calculation-toolkit.org/calculation-toolkit.js/calculation-toolkit.min.js) or just hotlink to it:
+If you are using a browser, you can download [calculation-toolkit from GitHub](https://calculation-toolkit.org/package/bundle.min.js) or just hotlink to it:
 
-    <script src="https://calculation-toolkit.org/calculation-toolkit.js/calculation-toolkit.min.js"></script>
+    <script src="https://calculation-toolkit.org/package/bundle.min.js"></script>
 
 If you are using node, you can install calculation-toolkit with [npm](https://npmjs.org/).
 
@@ -50,7 +50,7 @@ Convert 25 yard to inch
 
     calc.lengthCalc("25 yard to in")
 
-If you need more please visit the website: [Docs](https://calculation-toolkit.org/docs/)
+If you need more please visit the website: [Docs](https://calculation-toolkit.org/docs)
 
 ## License
 

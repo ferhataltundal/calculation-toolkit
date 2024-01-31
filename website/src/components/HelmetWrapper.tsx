@@ -14,6 +14,7 @@ export default function HelmetWrapper({
     <>
       <Helmet>
         <title>{title}</title>
+        <meta name="title" content={title} />
         <meta name="description" content={description} />
       </Helmet>
       {children}
