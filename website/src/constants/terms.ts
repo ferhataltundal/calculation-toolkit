@@ -1,4 +1,4 @@
-import { File } from "lucide-react";
+import { Circle } from "lucide-react";
 
 export const Terms = [
   {
@@ -6,82 +6,82 @@ export const Terms = [
     items: [
       {
         name: "Arithmetic Mean",
-        icon: File,
+        icon: Circle,
         path: "/docs/arithmetic-mean",
       },
       {
         name: "Harmonic Mean",
-        icon: File,
+        icon: Circle,
         path: "/docs/harmonic-mean",
       },
       {
         name: "Geometric Mean",
-        icon: File,
+        icon: Circle,
         path: "/docs/geometric-mean",
       },
       {
         name: "Combine Mean",
-        icon: File,
+        icon: Circle,
         path: "/docs/combine-mean",
       },
       {
         name: "Combination",
-        icon: File,
+        icon: Circle,
         path: "/docs/combination",
       },
       {
         name: "Permutation",
-        icon: File,
+        icon: Circle,
         path: "/docs/permutation",
       },
       {
         name: "Factorial",
-        icon: File,
+        icon: Circle,
         path: "/docs/factorial",
       },
       {
         name: "Gamma",
-        icon: File,
+        icon: Circle,
         path: "/docs/gamma",
       },
       {
         name: "Median",
-        icon: File,
+        icon: Circle,
         path: "/docs/median",
       },
       {
         name: "Mode",
-        icon: File,
+        icon: Circle,
         path: "/docs/mode",
       },
       {
         name: "Min",
-        icon: File,
+        icon: Circle,
         path: "/docs/min",
       },
       {
         name: "Max",
-        icon: File,
+        icon: Circle,
         path: "/docs/max",
       },
       {
         name: "Sum",
-        icon: File,
+        icon: Circle,
         path: "/docs/sum",
       },
       {
         name: "Range",
-        icon: File,
+        icon: Circle,
         path: "/docs/range",
       },
       {
         name: "z-Score",
-        icon: File,
+        icon: Circle,
         path: "/docs/z-score",
       },
       {
         name: "Random Generator",
-        icon: File,
+        icon: Circle,
         path: "/docs/random-generator",
       },
     ],
@@ -92,12 +92,12 @@ export const Terms = [
     items: [
       {
         name: "Shuffle",
-        icon: File,
+        icon: Circle,
         path: "/docs/shuffle",
       },
       {
         name: "Sample",
-        icon: File,
+        icon: Circle,
         path: "/docs/sample",
       },
     ],
@@ -108,47 +108,47 @@ export const Terms = [
     items: [
       {
         name: "Cone Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/cone-volume",
       },
       {
         name: "Cube Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/cone-volume",
       },
       {
         name: "Cuboid Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/cuboid-volume",
       },
       {
         name: "Cylinder Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/cylinder-volume",
       },
       {
         name: "Rectangular Prism Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/rectangular-prism-volume",
       },
       {
         name: "Regular Tetrahedron Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/regular-tetrahedron-volume",
       },
       {
         name: "Sphere Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/sphere-volume",
       },
       {
         name: "Square Prism Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/square-prism-volume",
       },
       {
         name: "Square Pyramid Volume",
-        icon: File,
+        icon: Circle,
         path: "/docs/square-pyramid-volume",
       },
     ],
@@ -159,12 +159,12 @@ export const Terms = [
     items: [
       {
         name: "Currency",
-        icon: File,
+        icon: Circle,
         path: "/docs/currency",
       },
       {
         name: "Parity",
-        icon: File,
+        icon: Circle,
         path: "/docs/parity",
       },
     ],
@@ -189,42 +189,42 @@ export const Terms = [
     items: [
       {
         name: "Circle Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/circle-area",
       },
       {
         name: "Cone Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/cone-area",
       },
       {
         name: "Cube Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/cube-area",
       },
       {
         name: "Cylinder Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/cylinder-area",
       },
       {
         name: "Rectangle Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/rectangle-area",
       },
       {
         name: "Sphere Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/sphere-area",
       },
       {
         name: "Square Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/square-area",
       },
       {
         name: "Triangle Area",
-        icon: File,
+        icon: Circle,
         path: "/docs/triangle-area",
       },
     ],
@@ -235,27 +235,27 @@ export const Terms = [
     items: [
       {
         name: "Circle Perimeter",
-        icon: File,
+        icon: Circle,
         path: "/docs/circle-perimeter",
       },
       {
         name: "Equilateral Triangle Perimeter",
-        icon: File,
+        icon: Circle,
         path: "/docs/equilateral-triangle-perimeter",
       },
       {
         name: "Isosceles Triangle Perimeter",
-        icon: File,
+        icon: Circle,
         path: "/docs/isosceles-triangle-perimeter",
       },
       {
         name: "Non - Isosceles Triangle Perimeter",
-        icon: File,
+        icon: Circle,
         path: "/docs/non-isosceles-triangle-area",
       },
       {
         name: "Square Perimeter",
-        icon: File,
+        icon: Circle,
         path: "/docs/square-perimeter",
       },
     ],
@@ -266,12 +266,12 @@ export const Terms = [
     items: [
       {
         name: "Temperature Converter",
-        icon: File,
+        icon: Circle,
         path: "/docs/temperature-converter",
       },
       {
         name: "Length Converter",
-        icon: File,
+        icon: Circle,
         path: "/docs/length-converter",
       },
     ],

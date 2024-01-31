@@ -230,7 +230,7 @@ export const Paths = () => {
               element: <CubeVolume />,
             },
             {
-              path: "square-volume",
+              path: "cuboid-volume",
               element: <CuboidVolume />,
             },
             {

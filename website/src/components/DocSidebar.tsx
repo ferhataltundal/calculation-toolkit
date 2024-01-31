@@ -1,7 +1,7 @@
 import { docLinks } from "@/constants/links";
 import { NavLink } from "react-router-dom";
 
-const CustomNavLink = ({ name, path }: { path: string; name: string }) => {
+export const CustomNavLink = ({ name, path }: { path: string; name: string }) => {
   return (
     <NavLink
       to={path}
@@ -18,7 +18,7 @@ const CustomNavLink = ({ name, path }: { path: string; name: string }) => {
   );
 };
 
-const DocumentationSide = ({
+export const DocumentationSide = ({
   menu,
   links,
 }: {
@@ -38,9 +38,9 @@ const DocumentationSide = ({
   );
 };
 
-const Sidebar = () => {
+const DocSidebar = () => {
   return (
-    <div className="sticky h-screen left-0 border border-gray-200 w-full max-w-[250px] overflow-auto p-5 use-custom-scroll">
+    <div className="sticky h-screen left-0 border border-gray-200 w-full max-w-[250px] overflow-auto p-5 use-custom-scroll max-md:hidden">
       <DocumentationSide
         menu="Getting Started"
         links={docLinks.gettingStarted}
@@ -62,4 +62,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default DocSidebar;

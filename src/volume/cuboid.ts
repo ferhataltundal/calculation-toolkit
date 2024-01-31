@@ -1,5 +1,5 @@
 /**
- * A function that calculates the volume of a given cuboid (rectangular prism).
+ * A function that calculates the volume of a given cuboid.
  *
  * This function calculates the volume of the given cuboid based on its long side length (a), short side length (b), and height (h) and returns the result.
  * The volume of the cuboid is calculated using the formula a * b * h (the product of the long side length, short side length, and height).

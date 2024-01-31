@@ -1,4 +1,4 @@
-import Sidebar from "@/components/Sidebar";
+import DocSidebar from "@/components/DocSidebar";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { docLinks } from "@/constants/links";
 import { useMemo } from "react";
@@ -6,6 +6,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import HelmetWrapper from "@/components/HelmetWrapper";
+import MobileDocSidebar from "@/components/MobileDocSidebar";
+
+export const ActionSingleLeftButton = ({
+  name,
+  path,
+}: {
+  name: string;
+  path: string;
+}) => {
+  return (
+    <div className="w-full mt-20 flex items-center justify-start">
+      <Link
+        to={`/docs/${path}`}
+        className={cn(
+          buttonVariants({
+            variant: "outline",
+          }),
+          "text-gray-800 flex justify-between items-center gap-2"
+        )}
+      >
+        <ChevronLeft size={24} strokeWidth={1} /> {name}
+      </Link>
+    </div>
+  );
+};
 
 export const ActionSingleButton = ({
   name,
@@ -106,9 +131,10 @@ const Docs = () => {
       title="Documentation"
       description="Docs to calculation-toolkit"
     >
+      <MobileDocSidebar />
       <div className="relative w-full flex justify-center flex-row gap-10">
-        <Sidebar />
-        <div className="w-full flex flex-col p-2 mt-10">
+        <DocSidebar />
+        <div className="w-full flex flex-col p-3 mt-10">
           <div className="max-w-[800px] w-full">
             {findMenu}
             <Outlet />
