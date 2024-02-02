@@ -8,7 +8,6 @@ For detailed documentation on all available functions and their usage, please re
 
 - 📗 [API Documentation](https://calculation-toolkit.org/docs/)
 
-[![coverage](https://coveralls.io/repos/github/ferhataltundal/calculation-toolkit/badge.svg)](https://calculation-toolkit.org/docs)
 [![npm](https://badge.fury.io/js/calculation-toolkit.svg)](http://badge.fury.io/js/calculation-toolkit)
 
 ## Features
