@@ -1,57 +1,154 @@
-export { default as factorial } from "./common/factorial";
-export { default as permutation } from "./common/permutation";
-export { default as combination } from "./common/combination";
-export { default as arithmeticMean } from "./common/arithmetic-mean";
-export { default as geometricMean } from "./common/geometric-mean";
-export { default as harmonicMean } from "./common/harmonic-mean";
-export { default as combineMean } from "./common/combine-mean";
-export { default as min } from "./common/min";
-export { default as max } from "./common/max";
-export { default as sum } from "./common/sum";
-export { default as median } from "./common/median";
-export { default as gamma } from "./common/gamma";
-export { default as randomGenerator } from "./common/random-generator";
-export { default as range } from "./common/range";
-export { default as zScore } from "./common/z-score";
-export { default as mode } from "./common/mode";
+import factorial from "./common/factorial";
+import permutation from "./common/permutation";
+import combination from "./common/combination";
+import arithmeticMean from "./common/arithmetic-mean";
+import geometricMean from "./common/geometric-mean";
+import harmonicMean from "./common/harmonic-mean";
+import combineMean from "./common/combine-mean";
+import min from "./common/min";
+import max from "./common/max";
+import sum from "./common/sum";
+import median from "./common/median";
+import gamma from "./common/gamma";
+import randomGenerator from "./common/random-generator";
+import range from "./common/range";
+import zScore from "./common/z-score";
+import mode from "./common/mode";
 
 //Area calculation
-export { default as circleArea } from "./area/circle";
-export { default as coneArea } from "./area/cone";
-export { default as cubeArea } from "./area/cube";
-export { default as cylinderArea } from "./area/cylinder";
-export { default as rectangleArea } from "./area/rectangle";
-export { default as sphereArea } from "./area/sphere";
-export { default as squareArea } from "./area/square";
-export { default as triangleArea } from "./area/triangle";
+import circleArea from "./area/circle";
+import coneArea from "./area/cone";
+import cubeArea from "./area/cube";
+import cylinderArea from "./area/cylinder";
+import rectangleArea from "./area/rectangle";
+import sphereArea from "./area/sphere";
+import squareArea from "./area/square";
+import triangleArea from "./area/triangle";
 
 //Volume calculation
-export { default as coneVolume } from "./volume/cone";
-export { default as cubeVolume } from "./volume/cube";
-export { default as cuboidVolume } from "./volume/cuboid";
-export { default as cylinderVolume } from "./volume/cylinder";
-export { default as rectangularPrismVolume } from "./volume/rectangular-prism";
-export { default as regularTetrahedronVolume } from "./volume/regular-tetrahedron";
-export { default as sphereVolume } from "./volume/sphere";
-export { default as squarePyramidVolume } from "./volume/square-pyramid";
-export { default as squarePrismVolume } from "./volume/square-prism";
+import coneVolume from "./volume/cone";
+import cubeVolume from "./volume/cube";
+import cuboidVolume from "./volume/cuboid";
+import cylinderVolume from "./volume/cylinder";
+import rectangularPrismVolume from "./volume/rectangular-prism";
+import regularTetrahedronVolume from "./volume/regular-tetrahedron";
+import sphereVolume from "./volume/sphere";
+import squarePyramidVolume from "./volume/square-pyramid";
+import squarePrismVolume from "./volume/square-prism";
 
 //Perimeter calculation
-export { default as circlePerimeter } from "./perimeter/circle";
-export { default as equilateralTrianglePerimeter } from "./perimeter/equilateral-triangle";
-export { default as isoscelesTrianglePerimeter } from "./perimeter/isosceles-triangle";
-export { default as nonIsoscelesTrianglePerimeter } from "./perimeter/non-isosceles-triangle";
-export { default as rectanglePerimeter } from "./perimeter/rectangle";
-export { default as squarePerimeter } from "./perimeter/square";
+import circlePerimeter from "./perimeter/circle";
+import equilateralTrianglePerimeter from "./perimeter/equilateral-triangle";
+import isoscelesTrianglePerimeter from "./perimeter/isosceles-triangle";
+import nonIsoscelesTrianglePerimeter from "./perimeter/non-isosceles-triangle";
+import rectanglePerimeter from "./perimeter/rectangle";
+import squarePerimeter from "./perimeter/square";
 
 //Shuffle
-export { default as sample } from "./shuffle/sample";
-export { default as shuffle } from "./shuffle/shuffle";
+import sample from "./shuffle/sample";
+import shuffle from "./shuffle/shuffle";
 
 //Currency
-export { default as currency } from "./currency/currency";
-export { default as parity } from "./currency/parity";
+import currency from "./currency/currency";
+import parity from "./currency/parity";
 
 //Converters
-export { default as tempCalc } from "./converters/temperature";
-export { default as lengthCalc } from "./converters/length";
+import tempCalc from "./converters/temperature";
+import lengthCalc from "./converters/length";
+
+export {
+  factorial,
+  permutation,
+  combination,
+  arithmeticMean,
+  geometricMean,
+  harmonicMean,
+  combineMean,
+  min,
+  max,
+  sum,
+  median,
+  gamma,
+  randomGenerator,
+  range,
+  zScore,
+  mode,
+  circleArea,
+  coneArea,
+  cubeArea,
+  cylinderArea,
+  rectangleArea,
+  sphereArea,
+  squareArea,
+  triangleArea,
+  coneVolume,
+  cubeVolume,
+  cuboidVolume,
+  cylinderVolume,
+  rectangularPrismVolume,
+  regularTetrahedronVolume,
+  sphereVolume,
+  squarePyramidVolume,
+  squarePrismVolume,
+  circlePerimeter,
+  equilateralTrianglePerimeter,
+  isoscelesTrianglePerimeter,
+  nonIsoscelesTrianglePerimeter,
+  rectanglePerimeter,
+  squarePerimeter,
+  sample,
+  shuffle,
+  currency,
+  parity,
+  tempCalc,
+  lengthCalc,
+};
+
+const calc = {
+  factorial,
+  permutation,
+  combination,
+  arithmeticMean,
+  geometricMean,
+  harmonicMean,
+  combineMean,
+  min,
+  max,
+  sum,
+  median,
+  gamma,
+  randomGenerator,
+  range,
+  zScore,
+  mode,
+  circleArea,
+  coneArea,
+  cubeArea,
+  cylinderArea,
+  rectangleArea,
+  sphereArea,
+  squareArea,
+  triangleArea,
+  coneVolume,
+  cubeVolume,
+  cuboidVolume,
+  cylinderVolume,
+  rectangularPrismVolume,
+  regularTetrahedronVolume,
+  sphereVolume,
+  squarePyramidVolume,
+  squarePrismVolume,
+  circlePerimeter,
+  equilateralTrianglePerimeter,
+  isoscelesTrianglePerimeter,
+  nonIsoscelesTrianglePerimeter,
+  rectanglePerimeter,
+  squarePerimeter,
+  sample,
+  shuffle,
+  currency,
+  parity,
+  tempCalc,
+  lengthCalc,
+};
+export default calc;

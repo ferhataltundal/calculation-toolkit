@@ -10,7 +10,7 @@
     "removeComments": false,
     "sourceMap": true,
     "outDir": "./dist",
-    "experimentalDecorators": false /*-f*/,
+    "experimentalDecorators": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

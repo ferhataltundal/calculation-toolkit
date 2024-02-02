@@ -1,6 +1,6 @@
 {
   "name": "calculation-toolkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculation & Simple Statistic & Math Toolkit",
   "main": "./dist/index.js",
   "private": false,

@@ -4,7 +4,7 @@ dist-ssr
 *.local
 build
 package-lock.json
-
+*.tgz
 # Logs
 logs
 *.log
