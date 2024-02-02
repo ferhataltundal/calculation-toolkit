@@ -34,6 +34,10 @@ Then you can include it in your code:
 
 or
 
+    const {factorial, tempCalc} = require("calculation-toolkit");
+
+or
+
     import calc from "calculation-toolkit"
 
 or
