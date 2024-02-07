@@ -55,6 +55,7 @@ import parity from "./currency/parity";
 //Converters
 import tempCalc from "./converters/temperature";
 import lengthCalc from "./converters/length";
+import angleCalc from "./converters/angle";
 
 export {
   factorial,
@@ -102,6 +103,7 @@ export {
   parity,
   tempCalc,
   lengthCalc,
+  angleCalc,
 };
 
 const calc = {
@@ -150,5 +152,8 @@ const calc = {
   parity,
   tempCalc,
   lengthCalc,
+  angleCalc,
 };
 export default calc;
+
+console.log(angleCalc("0.34 degree to second"));
