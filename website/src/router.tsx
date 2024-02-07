@@ -51,6 +51,7 @@ import SquarePrismVolume from "./pages/ingredients/volume/SquarePrismVolume";
 import SquarePyramidVolume from "./pages/ingredients/volume/SquarePyramidVolume";
 import Sample from "./pages/ingredients/shuffle/Sample";
 import Shuffle from "./pages/ingredients/shuffle/Shuffle";
+import Tools from "./pages/Tools";
 const Layout = () => {
   return (
     <div className="relative flex flex-col min-h-screen">
@@ -72,6 +73,16 @@ export const Paths = () => {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/calculate",
+          element: <Tools />,
+          children: [
+            {
+              path: "",
+              element: null,
+            },
+          ],
         },
         {
           path: "/docs",

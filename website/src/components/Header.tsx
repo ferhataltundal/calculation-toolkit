@@ -26,6 +26,18 @@ const Header = () => {
           >
             Docs
           </NavLink>
+          <NavLink
+            to="/calculate"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "text-muted-foreground hover:text-gray-600"
+                : isActive
+                ? "text-gray-800"
+                : "text-muted-foreground hover:text-gray-600"
+            }
+          >
+            Calculate
+          </NavLink>
           <Link
             to="https://github.com/ferhataltundal/calculation-toolkit.git"
             target="_blank"
