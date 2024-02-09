@@ -156,4 +156,3 @@ const calc = {
 };
 export default calc;
 
-console.log(angleCalc("0.34 degree to second"));

@@ -1,11 +1,12 @@
 import { feetRates } from "../../constants/length-rates";
+import { unitQuery } from "./unit-query";
 
-export function feet(value: number, to: string) {
-  const key = `feet_to_${to}`;
+export function ft(value: number, to: string) {
+  const key = `ft_to_${unitQuery(to)}`;
   const rate = feetRates[key];
   if (rate !== undefined) {
     const result = value * rate;
-    return { result: `${result} ${to}`, raw: result };
+    return { result: `${result} ${unitQuery(to)}`, raw: result };
   } else {
     throw new Error("Conversion rate not found.");
   }

@@ -1,7 +1,7 @@
 import { gradRates } from "../../constants/angle-rates";
 
 export function grad(value: number, to: string) {
-  const key = `degree_to_${to}`;
+  const key = `grad_to_${to}`;
   const rate = gradRates[key];
   if (rate !== undefined) {
     const result = value * rate;
