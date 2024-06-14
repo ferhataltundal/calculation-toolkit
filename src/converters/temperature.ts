@@ -1,3 +1,4 @@
+import type { OptionsType, TempTypes } from "../types/type";
 import { triplePointOfWater } from "../utils/temperature/tpw";
 import { celsius } from "../utils/temperature/celsius";
 import { kelvin } from "../utils/temperature/kelvin";
@@ -5,32 +6,30 @@ import { fahrenheit } from "../utils/temperature/fahrenheit";
 import { rankine } from "../utils/temperature/rankine";
 import { reaumur } from "../utils/temperature/reaumur";
 
-export default function tempCalc(
-  input: string,
-  type: "result" | "raw" = "raw"
-) {
-  const parts = input.split(" ");
-  const value = parseFloat(parts[0]);
-  const from = parts[1];
-  const to = parts[3];
-
-  if (!value && value !== 0) {
+export default function temperatureConverter({
+  from,
+  to,
+  input,
+  output = "raw",
+}: OptionsType<TempTypes>) {
+  if (!input) {
     return new Error("Invalid value!");
   }
+
   try {
     switch (from) {
       case "kelvin":
-        return kelvin(value, to)[type];
+        return kelvin(input, to)[output];
       case "tpw":
-        return triplePointOfWater(value, to)[type];
+        return triplePointOfWater(input, to)[output];
       case "celsius":
-        return celsius(value, to)[type];
+        return celsius(input, to)[output];
       case "fahrenheit":
-        return fahrenheit(value, to)[type];
+        return fahrenheit(input, to)[output];
       case "rankine":
-        return rankine(value, to)[type];
+        return rankine(input, to)[output];
       case "reaumur":
-        return reaumur(value, to)[type];
+        return reaumur(input, to)[output];
       default:
         return SyntaxError("Unit not found!");
     }

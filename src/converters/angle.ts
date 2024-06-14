@@ -1,3 +1,4 @@
+import type { OptionsType, AngleTypes } from "../types/type";
 import { radian } from "../utils/angle/radian";
 import { degree } from "../utils/angle/degree";
 import { grad } from "../utils/angle/grad";
@@ -13,48 +14,46 @@ import { turn } from "../utils/angle/turn";
 import { mil } from "../utils/angle/mil";
 import { sign } from "../utils/angle/sign";
 
-export default function angleCalc(
-  input: string,
-  type: "result" | "raw" = "raw"
-) {
-  const parts = input.split(" ");
-  const value = parseFloat(parts[0]);
-  const from = parts[1];
-  const to = parts[3];
-
-  if (!value && value !== 0) {
+export default function angleConverter({
+  from,
+  to,
+  input,
+  output = "raw",
+}: OptionsType<AngleTypes>) {
+  if (!input) {
     return new Error("Invalid value!");
   }
+
   try {
     switch (from) {
       case "degree":
-        return degree(value, to)[type];
+        return degree(input, to)[output];
       case "radian":
-        return radian(value, to)[type];
+        return radian(input, to)[output];
       case "grad":
-        return grad(value, to)[type];
+        return grad(input, to)[output];
       case "minute":
-        return minute(value, to)[type];
+        return minute(input, to)[output];
       case "second":
-        return second(value, to)[type];
+        return second(input, to)[output];
       case "gon":
-        return gon(value, to)[type];
+        return gon(input, to)[output];
       case "sign":
-        return sign(value, to)[type];
+        return sign(input, to)[output];
       case "mil":
-        return mil(value, to)[type];
+        return mil(input, to)[output];
       case "revolution":
-        return revolution(value, to)[type];
+        return revolution(input, to)[output];
       case "circle":
-        return circle(value, to)[type];
+        return circle(input, to)[output];
       case "turn":
-        return turn(value, to)[type];
+        return turn(input, to)[output];
       case "quadrant":
-        return quadrant(value, to)[type];
+        return quadrant(input, to)[output];
       case "rightangle":
-        return rightangle(value, to)[type];
+        return rightangle(input, to)[output];
       case "sextant":
-        return sextant(value, to)[type];
+        return sextant(input, to)[output];
       default:
         return SyntaxError("Unit not found!");
     }

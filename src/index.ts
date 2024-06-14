@@ -53,7 +53,7 @@ import currency from "./currency/currency";
 import parity from "./currency/parity";
 
 //Converters
-import tempCalc from "./converters/temperature";
+import temperatureConverter from "./converters/temperature";
 import lengthCalc from "./converters/length";
 import angleCalc from "./converters/angle";
 
@@ -101,7 +101,7 @@ export {
   shuffle,
   currency,
   parity,
-  tempCalc,
+  temperatureConverter,
   lengthCalc,
   angleCalc,
 };
@@ -150,7 +150,7 @@ const calc = {
   shuffle,
   currency,
   parity,
-  tempCalc,
+  temperatureConverter,
   lengthCalc,
   angleCalc,
 };

@@ -1,3 +1,4 @@
+import type { OptionsType, LengthTypes } from "../types/type";
 import { m } from "../utils/lenght/m";
 import { cm } from "../utils/lenght/cm";
 import { mm } from "../utils/lenght/mm";
@@ -16,95 +17,55 @@ import { fm } from "../utils/lenght/fm";
 import { am } from "../utils/lenght/am";
 import { ly } from "../utils/lenght/ly";
 
-export default function lengthCalc(
-  input: string,
-  type: "result" | "raw" = "raw"
-) {
-  const parts = input.split(" ");
-  const value = parseFloat(parts[0]);
-  const from = parts[1];
-  const to = parts[3];
-
-  if (!value && value !== 0) {
+export default function lengthConverter({
+  from,
+  to,
+  input,
+  output = "raw",
+}: OptionsType<LengthTypes>) {
+  if (!input) {
     return new Error("Invalid value!");
   }
 
   try {
-    if (from === "µm" || from === "micrometer" || from === "um") {
-      return µm(value, to)[type];
-    } else if (from === "nm" || from === "nanometer") {
-      return nm(value, to)[type];
-    } else if (from === "mm" || from === "milimeter") {
-      return mm(value, to)[type];
-    } else if (from === "cm" || from === "centimeter") {
-      return cm(value, to)[type];
-    } else if (from === "m" || from === "meter") {
-      return m(value, to)[type];
-    } else if (from === "dm" || from === "desimeter") {
-      return dm(value, to)[type];
-    } else if (from === "dam" || from === "decameter") {
-      return dam(value, to)[type];
-    } else if (from === "hm" || from === "hectometer") {
-      return hm(value, to)[type];
-    } else if (from === "in" || from === "inch") {
-      return _in(value, to)[type];
-    } else if (from === "km" || from === "kilometer") {
-      return km(value, to)[type];
-    } else if (from === "mi" || from === "mile") {
-      return mi(value, to)[type];
-    } else if (from === "mil") {
-      return mil(value, to)[type];
-    } else if (from === "yd" || from === "yard" || from === "yarda") {
-      return yd(value, to)[type];
-    } else if (from === "ft" || from === "feet" || from === "foot") {
-      return yd(value, to)[type];
-    } else if (from === "fm" || from === "femtometer") {
-      return fm(value, to)[type];
-    } else if (from === "am" || from === "attometer") {
-      return am(value, to)[type];
-    } else if (from === "ly" || from === "lightyear") {
-      return ly(value, to)[type];
-    } else {
-      return SyntaxError("Unit not found!");
-    }
-    /*switch (from) {
-      case "µm" ?? "micrometer" ?? "um":
-        return µm(value, to)[type];
-      case "nm" || "nanometer":
-        return nm(value, to)[type];
-      case "mm" || "milimeter":
-        return mm(value, to)[type];
-      case "cm" || "centimeter":
-        return cm(value, to)[type];
-      case "m" || "meter":
-        return m(value, to)[type];
-      case "dm" || "desimeter":
-        return dm(value, to)[type];
-      case "dam" || "decameter":
-        return dam(value, to)[type];
-      case "hm" || "hectometer":
-        return hm(value, to)[type];
-      case "in" || "inch":
-        return _in(value, to)[type];
-      case "km" || "kilometer":
-        return km(value, to)[type];
-      case "mi" || "mile":
-        return mi(value, to)[type];
+    switch (from) {
+      case "µm":
+        return µm(input, to)[output];
+      case "nm":
+        return nm(input, to)[output];
+      case "mm":
+        return mm(input, to)[output];
+      case "cm":
+        return cm(input, to)[output];
+      case "m":
+        return m(input, to)[output];
+      case "dm":
+        return dm(input, to)[output];
+      case "dam":
+        return dam(input, to)[output];
+      case "hm":
+        return hm(input, to)[output];
+      case "in":
+        return _in(input, to)[output];
+      case "km":
+        return km(input, to)[output];
+      case "mi":
+        return mi(input, to)[output];
       case "mil":
-        return mil(value, to)[type];
-      case "yd" || "yard" || "yarda":
-        return yd(value, to)[type];
-      case "ft" || "feet" || "foot":
-        return ft(value, to)[type];
-      case "fm" || "femtometer":
-        return fm(value, to)[type];
-      case "am" || "attometer":
-        return am(value, to)[type];
-      case "ly" || "lightyear":
-        return ly(value, to)[type];
+        return mil(input, to)[output];
+      case "yd":
+        return yd(input, to)[output];
+      case "ft":
+        return ft(input, to)[output];
+      case "fm":
+        return fm(input, to)[output];
+      case "am":
+        return am(input, to)[output];
+      case "ly":
+        return ly(input, to)[output];
       default:
         return SyntaxError("Unit not found!");
-    }*/
+    }
   } catch (e) {
     return new Error("Invalid value!");
   }
