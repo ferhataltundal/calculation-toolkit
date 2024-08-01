@@ -8,12 +8,14 @@ export type OptionsType<T> = {
   output?: "raw" | "result";
 };
 
+export type ComplexRateType<K extends string> = {[key in K]: { [key in K]: number }};
+
 export type LengthTypes =
   | "m"
   | "mm"
   | "cm"
   | "nm"
-  | "µm"
+  | "mcm"
   | "dm"
   | "dam"
   | "hm"
@@ -26,6 +28,7 @@ export type LengthTypes =
   | "fm"
   | "am"
   | "ly";
+
 export type TempTypes =
   | "tpw"
   | "kelvin"
@@ -69,7 +72,7 @@ export type WeightAndMassTypes =
   | "dag"
   | "dg"
   | "cg"
-  | "µm"
+  | "mcg"
   | "ng"
   | "pg"
   | "fg"
