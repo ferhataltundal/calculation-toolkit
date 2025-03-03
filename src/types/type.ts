@@ -8,7 +8,14 @@ export type OptionsType<T> = {
   output?: "raw" | "result";
 };
 
-export type ComplexRateType<K extends string> = {[key in K]: { [key in K]: number }};
+export type OutputType = {
+  result: string;
+  raw: number;
+};
+
+export type ComplexRateType<K extends string> = {
+  [key in K]: { [key in K]: number };
+};
 
 export type LengthTypes =
   | "m"
@@ -100,20 +107,7 @@ export type WeightAndMassTypes =
   | "s-apothecary"
   | "gr"
   | "gamma"
-  | "talent-hebrew"
-  | "mina-hebrew"
-  | "shekel-hebrew"
-  | "bekan-hebrew"
-  | "gerah-hebrew"
-  | "talent-greek"
-  | "mina-greek"
-  | "tetradrachma-greek"
-  | "didrachma-greek"
-  | "drachma-greek"
-  | "denarius-roman"
-  | "assarion-roman"
-  | "quadrans-roman"
-  | "lepton-roman"
+  | "atomic-mass"
   | "planck-mass"
   | "electron-mass"
   | "muon-mass"

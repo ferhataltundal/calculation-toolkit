@@ -1,6 +1,6 @@
 import { ComplexRateType, TempTypes } from "../types/type";
 
-export const angleConversionRates: ComplexRateType<TempTypes> = {
+export const temperatureConversionRates: ComplexRateType<TempTypes> = {
   tpw: {
     tpw: 1,
     fahrenheit: 32.018,

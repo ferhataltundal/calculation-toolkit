@@ -1,70 +1,39 @@
 import type { OptionsType, LengthTypes } from "../types/type";
-import { m } from "../utils/lenght/m";
-import { cm } from "../utils/lenght/cm";
-import { mm } from "../utils/lenght/mm";
-import { nm } from "../utils/lenght/nm";
-import { µm } from "../utils/lenght/µm";
-import { dm } from "../utils/lenght/dm";
-import { dam } from "../utils/lenght/dam";
-import { hm } from "../utils/lenght/hm";
-import { _in } from "../utils/lenght/in";
-import { km } from "../utils/lenght/km";
-import { mi } from "../utils/lenght/mi";
-import { mil } from "../utils/lenght/mil";
-import { yd } from "../utils/lenght/yd";
-import { ft } from "../utils/lenght/ft";
-import { fm } from "../utils/lenght/fm";
-import { am } from "../utils/lenght/am";
-import { ly } from "../utils/lenght/ly";
+import { _length } from "../utils/lenght";
+
+/**
+ * A function to convert length units between various systems.
+ * Converts a given input length from one unit to another.
+ *
+ * @param {Object} options - The options object containing the conversion parameters.
+ * @param {string} options.from - The unit of the input length (e.g., "m", "km", "mil").
+ * @param {string} options.to - The unit to convert the length to (e.g., "cm", "in", "ft").
+ * @param {number} options.input - The input length value to be converted.
+ * @param {string} [options.output="raw"] - The output format (e.g., "raw" or "result" for raw value, other formats can be defined).
+ * @returns {number|Error|string} The converted length value, an error if invalid input is provided, or a string if a specific output format is requested.
+ * @throws {SyntaxError} Throws an error if the unit is not found.
+ * @throws {Error} Throws an error if an invalid input is provided.
+ *
+ * @example
+ * const convertedLength = lengthConverter({ from: "m", to: "km", input: 1000 });
+ * console.log(convertedLength); // 1
+ */
 
 export default function lengthConverter({
   from,
   to,
   input,
   output = "raw",
-}: OptionsType<LengthTypes>) {
+}: OptionsType<LengthTypes>): number | Error | string {
   if (!input) {
     return new Error("Invalid value!");
   }
 
   try {
-    switch (from) {
-      case "µm":
-        return µm(input, to)[output];
-      case "nm":
-        return nm(input, to)[output];
-      case "mm":
-        return mm(input, to)[output];
-      case "cm":
-        return cm(input, to)[output];
-      case "m":
-        return m(input, to)[output];
-      case "dm":
-        return dm(input, to)[output];
-      case "dam":
-        return dam(input, to)[output];
-      case "hm":
-        return hm(input, to)[output];
-      case "in":
-        return _in(input, to)[output];
-      case "km":
-        return km(input, to)[output];
-      case "mi":
-        return mi(input, to)[output];
-      case "mil":
-        return mil(input, to)[output];
-      case "yd":
-        return yd(input, to)[output];
-      case "ft":
-        return ft(input, to)[output];
-      case "fm":
-        return fm(input, to)[output];
-      case "am":
-        return am(input, to)[output];
-      case "ly":
-        return ly(input, to)[output];
-      default:
-        return SyntaxError("Unit not found!");
+    if (from) {
+      return _length(from, input, to)[output];
+    } else {
+      return SyntaxError("Unit not found!");
     }
   } catch (e) {
     return new Error("Invalid value!");

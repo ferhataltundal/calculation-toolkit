@@ -53,7 +53,7 @@ import currency from "./currency/currency";
 import parity from "./currency/parity";
 
 //Converters
-import temperatureConverter from "./converters/temperature";
+import tempCalc from "./converters/temperature";
 import lengthCalc from "./converters/length";
 import angleCalc from "./converters/angle";
 
@@ -101,7 +101,7 @@ export {
   shuffle,
   currency,
   parity,
-  temperatureConverter,
+  tempCalc,
   lengthCalc,
   angleCalc,
 };
@@ -150,9 +150,16 @@ const calc = {
   shuffle,
   currency,
   parity,
-  temperatureConverter,
+  tempCalc,
   lengthCalc,
   angleCalc,
 };
-export default calc;
 
+console.log(
+  tempCalc({
+    from: "tpw",
+    to: "kelvin",
+    input: 2,
+  })
+);
+export default calc;
